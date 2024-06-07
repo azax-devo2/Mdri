@@ -7,10 +7,10 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
     if (device !== 'desktop' || device !== 'web') {      
         var joanimiimg = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/file/6f891a7d95ebda85c819b.jpg'}}, { upload: conn.waUploadToServer })
         const interactiveMessage = {
-            body: { text: `@${mentionId.split('@')[0]} طلب القائمة`.trim() },
+            body: { text: `*مرحبا يا*: @${mentionId.split('@')[0]} `.trim() },
             footer: { text: `©deadpool by Azax`.trim() },  
             header: {
-                title: `* تــجــربـة الــقــايـمـه الــجـديـده *`,
+                title: `*~⊹‏⊱≼━━━⌬〔📜〕⌬━━━≽⊰⊹~*`,
                 hasMediaAttachment: true,
                 imageMessage: joanimiimg.imageMessage,
             },
@@ -27,9 +27,9 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                                     rows: [
                                         {
                                             header: '',
-                                            title: 'قسم #التحكم',
-                                            description: 'اســتـدعاء قـسـم #للمطور',
-                                            id: 'التحكم'
+                                            title: 'قسم التحميلات📁',
+                                            description: 'اســتـدعاء قـسـم التحميلات',
+                                            id: '.التحميلات'
                                         }
                                     ]
                                 },
@@ -38,9 +38,9 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                                     rows: [
                                         {
                                             header: '',
-                                            title: 'قـسـم #الـجـروب',
+                                            title: 'قـسـم الـجـروب💭',
                                             description: 'اسـتـدعـاء قـسم #للمشرف',
-                                            id: '.مشرف'
+                                            id: '.الجروب'
                                         }
                                     ]
                                 },
@@ -49,9 +49,9 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                                     rows: [
                                         {
                                             header: 'Test',
-                                            title: 'Click Me',
-                                            description: 'Click Me',
-                                            id: 'te'
+                                            title: 'قـسـم الأدوات🛠️',
+                                            description: '#الأدوات',
+                                            id: '.الادوات'
                                         }
                                     ]
                                 }
@@ -68,7 +68,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                     },
                     {
                         "name": "cta_url",
-                        "buttonParamsJson": "{\"display_text\":\"قـناة البوت\",\"url\":\"الرابط\",\"merchant_url\":\"\"}"
+                        "buttonParamsJson": "{\"display_text\":\"قـناة البوت\",\"url\":\"https://whatsapp.com/channel/0029Vag9bvrLSmbRE2I5Oj2h\",\"merchant_url\":\"\"}"
                     }
                 ],
                 messageParamsJson: ''
