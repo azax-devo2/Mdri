@@ -34,7 +34,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
     throw tradutor.texto3;
   }
 };
-handler.command = /^(spotify|music)$/i;
+handler.command = /^(سبوتيفاي|music)$/i;
 export default handler;
 
 //***Código antiguo/obsoleto.
