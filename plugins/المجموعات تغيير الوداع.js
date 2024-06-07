@@ -12,6 +12,6 @@ const handler = async (m, {conn, text, isROwner, isOwner}) => {
 };
 handler.help = ['setbye <text>'];
 handler.tags = ['group'];
-handler.command = ['setbye'];
+handler.command = ['تغيير-الوداع'];
 handler.admin = true;
 export default handler;
