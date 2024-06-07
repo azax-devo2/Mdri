@@ -30,5 +30,5 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
 };
 handler.help = ['igstory <username>'];
 handler.tags = ['downloader'];
-handler.command = ['igstory', 'ighistoria'];
+handler.command = ['انستا_ستوري', 'ighistoria'];
 export default handler;
