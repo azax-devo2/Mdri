@@ -66,7 +66,7 @@ const handler = async (m, { command, usedPrefix, conn, text }) => {
     const dataMessage = `${tradutor.texto4[0]} ${data.resultado.title}\n${tradutor.texto4[1]} ${data.resultado.publicDate}\n${tradutor.texto4[2]} ${data.resultado.channel}\n${tradutor.texto4[3]} ${data.resultado.url}`.trim();  
     if (!text.includes('SN@') && command !== 'شغل') await conn.sendMessage(m.chat, { text: dataMessage }, { quoted: m });      
       
-    if (command === 'playyt') {
+    if (command === 'شغل') {
       var messa = await prepareWAMessageMedia({ image: {url: data.resultado.image}}, { upload: conn.waUploadToServer });
       let msg = generateWAMessageFromContent(m.chat, {
           viewOnceMessage: {
