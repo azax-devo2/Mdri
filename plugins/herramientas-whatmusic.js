@@ -51,5 +51,5 @@ const handler = async (m) => {
   }
 };
 
-handler.command = /^(quemusica|quemusicaes|whatmusic|shazam)$/i;
+handler.command = /^(quemusica|quemusicaes|whatmusic|اسم-الاغنيه)$/i;
 export default handler;
