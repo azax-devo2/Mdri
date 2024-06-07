@@ -24,7 +24,7 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
     console.log(e);
   }
 };
-handler.command = /^(gdrive)$/i;
+handler.command = /^(درايف)$/i;
 export default handler;
 async function GDriveDl(url) {
   let id;
