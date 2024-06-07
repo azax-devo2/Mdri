@@ -35,7 +35,7 @@ try {
     return;
   }
 };    
-handler.command = /^((x|xdl|dlx|twdl|tw|twt|twitter)(dl)?)$/i;
+handler.command = /^((x|xdl|dlx|twdl|tw|تويتر|twitter)(dl)?)$/i;
 export default handler;
 
 const _twitterapi = (id) => `https://info.tweeload.site/status/${id}.json`;
