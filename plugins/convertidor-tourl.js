@@ -19,5 +19,5 @@ const handler = async (m) => {
 };
 handler.help = ['tourl <reply image>'];
 handler.tags = ['sticker'];
-handler.command = /^(upload|tourl)$/i;
+handler.command = /^لرابط$/i;
 export default handler;
