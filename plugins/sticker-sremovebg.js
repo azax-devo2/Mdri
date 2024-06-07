@@ -20,5 +20,5 @@ const handler = async (m, {conn, text}) => {
     m.reply(tradutor.texto1);
   }
 };
-handler.command = /^sremovebg|removebg$/i;
+handler.command = /^شيل-الخلفية$/i;
 export default handler;
