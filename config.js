@@ -12,7 +12,7 @@ global.confirmCode = ""
 
 global.owner = [
   ['212602272422', '👑 Azax - Creador 👑', true],
-  ['51940617554', '💫 Shikamaro - Creador 💫', true]
+  ['201005603546', '💫 Shikamaro - Creador 💫', true]
 ];
 
 global.suittag = ['212602272422'];
