@@ -24,12 +24,12 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
     }
     const results = await yts(text);
     const textoInfo = `${tradutor.texto2[0]}
-◉ ${usedPrefix}audio <numero>
-◉ ${usedPrefix}video <numero> 
+◉ ${usedPrefix}صوت <numero>
+◉ ${usedPrefix}فيديو <numero> 
 
 ${tradutor.texto2[1]}
-*◉ ${usedPrefix}audio 5*
-*◉ ${usedPrefix}video 8*`.trim();
+*◉ ${usedPrefix}صوت 5*
+*◉ ${usedPrefix}فيديو 8*`.trim();
     const teks = results.all.map((v, i) => {
       const link = v.url;
       vids_.urls.push(link);
