@@ -19,7 +19,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
   try {
     let name;
     if (who === m.chat) {
-      name = "𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝";
+      name = "DEADPOOL - Bot";
     } else {
       name = conn.getName(who);
     }
@@ -35,5 +35,5 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
 };
 handler.help = ["slap"];
 handler.tags = ["General"];
-handler.command = /^(slap|bofetada)$/i;
+handler.command = /^(صفع)$/i;
 export default handler;
