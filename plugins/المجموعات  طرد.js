@@ -1,7 +1,7 @@
 
 let handler = async (m, { conn, participants, usedPrefix, command }) => {
 
-let kickte = `*قـم بالـرد على رسـالة الشخـص الذي تريد طرده او اشـر اليـه مثال \n.طرد ${taguser}*`
+let kickte = `*قـم بالـرد على رسـالة الشخـص الذي تريد طرده او اشـر اليـه*`
 
 if (!m.mentionedJid[0] && !m.quoted) return m.reply(kickte, m.chat, { mentions: conn.parseMention(kickte)}) 
 let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender
