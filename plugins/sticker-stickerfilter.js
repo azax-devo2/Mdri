@@ -3,7 +3,7 @@ import {sticker} from '../lib/sticker.js';
 import MessageType from '@whiskeysockets/baileys';
 
 
-const effects = ['greyscale', 'invert', 'brightness', 'threshold', 'sepia', 'red', 'green', 'blue', 'blurple', 'pixelate', 'blur'];
+const effects = ['اخضرار', 'معكوس', 'اضاءة', 'شولد', 'سيباي', 'احمر', 'اخضر', 'ازرق', 'بنفسجي', 'بيكسل', 'بلور'];
 
 const handler = async (m, {conn, usedPrefix, text}) => {
   const datas = global
@@ -41,5 +41,5 @@ ${effects.map((effect) => `_> ${effect}_`).join('\n')}
 };
 handler.help = ['stickfilter (caption|reply media)'];
 handler.tags = ['General'];
-handler.command = /^(stickerfilter|stikerfilter|cs2)$/i;
+handler.command = /^فلتر2$/i;
 export default handler;
