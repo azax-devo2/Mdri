@@ -33,7 +33,7 @@ ${repo.description ? `📝 ${tradutor.texto1[4]}\n${repo.description}` : ''}
 };
 handler.help = ['githubs'];
 handler.tags = ['buscadores'];
-handler.command = /^(ghs|githubs|githubs|githubsearch|gits|gitsearch)$/i;
+handler.command = /^(غيتهاب|githubs|githubs|githubsearch|gits|gitsearch)$/i;
 export default handler;
 
 function formatDate(n, locale = 'es') {
