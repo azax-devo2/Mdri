@@ -75,7 +75,7 @@ ${tradutor.texto1[0]}`;
 };
 handler.help = ['emoji <tipo> <emoji>'];
 handler.tags = ['sticker'];
-handler.command = ['emoji', 'smoji', 'semoji'];
+handler.command = ['ايموجي'];
 export default handler;
 async function semoji(hem) {
   const result = [];
