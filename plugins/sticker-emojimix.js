@@ -20,7 +20,7 @@ const handler = async (m, {conn, text, args}) => {
 };
 handler.help = ['emojimix'].map((v) => v + ' emot1|emot2>');
 handler.tags = ['fun'];
-handler.command = /^(emojimix)$/i;
+handler.command = /^(دمج)$/i;
 export default handler;
 const fetchJson = (url, options) => new Promise(async (resolve, reject) => {
   fetch(url, options)
