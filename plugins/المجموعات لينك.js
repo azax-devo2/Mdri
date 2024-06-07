@@ -10,9 +10,9 @@ const handler = async (m, {conn, args}) => {
   conn.reply(m.chat, 'https://chat.whatsapp.com/' + await conn.groupInviteCode(group), m, {
     contextInfo: {externalAdReply: {mediaUrl: null, mediaType: 1, description: null,
       title: tradutor.texto1[0],
-      body: '> *© 𝑫𝑬𝑨𝑫𝑷𝑶𝑶𝑳*',
+      body: '© 𝑫𝑬𝑨𝑫𝑷𝑶𝑶𝑳',
       previewType: 0, thumbnail: fs.readFileSync('./Menu2.jpg'),
-      sourceUrl: `https://github.com/BrunoSobrino/TheMystic-Bot-MD`}}});
+      sourceUrl: `https://whatsapp.com/channel/0029Vag9bvrLSmbRE2I5Oj2h`}}});
 };
 handler.help = ['linkgroup'];
 handler.tags2 = ['group'];
