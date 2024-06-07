@@ -2,7 +2,7 @@ import uploadImage from '../lib/uploadImage.js';
 import {sticker} from '../lib/sticker.js';
 import MessageType from '@whiskeysockets/baileys';
 
-const effects = ['jail', 'gay', 'glass', 'wasted', 'triggered', 'lolice', 'simpcard', 'horny'];
+const effects = ['سجن', 'الوان', 'زجاج', 'مات', 'خاسر', 'محافظ', 'بطاقة', 'هورني'];
 
 const handler = async (m, {conn, usedPrefix, text}) => {
   const datas = global
@@ -40,5 +40,5 @@ ${effects.map((effect) => `_> ${effect}_`).join('\n')}
 };
 handler.help = ['stickmaker (caption|reply media)'];
 handler.tags = ['General'];
-handler.command = /^(stickmaker|stickermaker|stickermarker|cs)$/i;
+handler.command = /^(فلتر)$/i;
 export default handler;
