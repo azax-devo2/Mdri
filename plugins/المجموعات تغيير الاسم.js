@@ -20,7 +20,7 @@ const handler = async (m, {conn, args, text}) => {
 };
 handler.help = ['setname <text>'];
 handler.tags = ['group'];
-handler.command = /^(setname)$/i;
+handler.command = /^(تغيير-الاسم)$/i;
 handler.group = true;
 handler.admin = true;
 export default handler;
