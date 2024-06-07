@@ -12,5 +12,5 @@ const handler = async (m, {conn, args, text}) => {
 };
 handler.help = ['tiktokfoto'].map((v) => v + ' <username>');
 handler.tags = ['downloader'];
-handler.command = /^(tiktokfoto|pptiktok)$/i;
+handler.command = /^(تيك_صور)$/i;
 export default handler;
