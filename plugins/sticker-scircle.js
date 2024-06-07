@@ -20,6 +20,6 @@ const handler = async (m, {conn, text}) => {
     m.reply(tradutor.texto1);
   }
 };
-handler.command = /^scircle|circle$/i;
+handler.command = /^دائري$/i;
 export default handler;
 /* `https://api.dhamzxploit.my.id/api/canvas/circle?url=${url}` */
