@@ -4,7 +4,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
     const device = await getDevice(m.key.id);
 
     if (device !== 'desktop' || device !== 'web') {      
-        var joanimiimg = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/file/bd913368f407fd197997f.jpg'}}, { upload: conn.waUploadToServer })
+        var joanimiimg = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/file/6f891a7d95ebda85c819b.jpg'}}, { upload: conn.waUploadToServer })
         const interactiveMessage = {
             body: { text: ``.trim() },
             footer: { text: `©JoAnimi for test`.trim() },  
@@ -15,18 +15,59 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
             },
             nativeFlowMessage: {
   						buttons: [
-                       {
-                "name": "single_select",
-                "buttonParamsJson": "{\"title\":\"القائمه📃\",\"sections\":[{\"title\":\"قسم التخصيصات\",\"highlight_label\":\"للمطور فقط\",\"rows\":[{\"title\":\"قسم #التحكم\",\"description\":\"اســتـدعاء قـسـم #للمطور
-\",\"id\":\".التحكم\"},{\"title\":\"قـسـم #الـجـروب\",\"description\":\"اسـتـدعـاء قـسم #للمشرف\",\"id\":\".مشرف\"}]}]}"
-                       },
-                       {
-                "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\":\"الــمـطـور🧑🏻‍💻\",\"id\":\".المطور\"}"
+  							{
+  								name: 'single_select',
+  						  	buttonParamsJson: JSON.stringify({
+  						  		title: 'القائمه📃',
+  						  		sections: [
+  						  			{
+  						  				title: 'قسم التخصيصات',
+  							  	    highlight_label: '',
+  						  		    rows: [
+  						  		    	{
+  						  		    		header: '',
+  										      title: 'قسم #التحكم',
+  									    	  description: 'اســتـدعاء قـسـم #للمطور',
+  								    		  id: 'التحكم'
+  						  		    	}
+  						  		    ]
+  						  			},
+  						  			{
+  						  				highlight_label: 'للمشرف فقط',
+  						  				rows: [
+  						  					{
+  						  		    		header: '',
+  										      title: 'قـسـم #الـجـروب',
+  									    	  description: 'اسـتـدعـاء قـسم #للمشرف',
+  								    		  id: '.مشرف'
+  						  		    	}
+  						  				]
+  						  			},
+  						  			{
+  						  				highlight_label: 'ON',
+  						  				rows: [
+  						  					{
+  						  		    		header: 'Test',
+  										      title: 'Click Me',
+  									    	  description: 'Click Me',
+  								    		  id: 'te'
+  						  		    	}
+  						  				]
+  						  			}
+  						  		]
+  						  	})
+  							},
+                        {
+                 "name": "cta_reminder",
+                 "buttonParamsJson": "{\"display_text\":\"ضبط التذكير\",\"id\":\"ذكرني في الوقت :\"}"
+                        },
+                        {
+                 "name": "cta_call",
+                 "buttonParamsJson": "{\"display_text\":\"اتصل بالمطور🙂‍↕\",\"id\":\"+212والرقم\"}"
                         },
                         {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"قـناة البوت🎊\",\"url\":\"https://whatsapp.com/channel/0029Vab5oDNElagpHtJjmT0B\",\"merchant_url\":\"\"}"
+                 "buttonParamsJson": "{\"display_text\":\"قـناة البوت\",\"url\":\"الرابط\",\"merchant_url\":\"\"}"
                         }
   			  		],
                 messageParamsJson: ''
@@ -43,10 +84,10 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
         conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id});
 
     } else {
-        conn.sendFile(m.chat, 'error.jpg', m);      
+        conn.sendFile(m.chat, 'JoAnimi•Error.jpg', m);      
     }    
 };
 handler.help = ['اوامر'];
 handler.tags = ['ازرار'];
-handler.command = /^(اوامر)$/i;
+handler.command = ['77'];
 export default handler;
