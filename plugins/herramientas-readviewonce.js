@@ -25,5 +25,5 @@ const handler = async (m, {conn}) => {
 };
 handler.help = ['readvo'];
 handler.tags = ['tools'];
-handler.command = /^(readviewonce|read|revelar|readvo)$/i;
+handler.command = /^(readviewonce|read|مراقبه|readvo)$/i;
 export default handler;
