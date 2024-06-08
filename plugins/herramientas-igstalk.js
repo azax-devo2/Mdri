@@ -25,7 +25,7 @@ ${tradutor.texto2[7]}\n${json.bio}`.trim();
   const aa = `${res3.result.photo_profile || res.profile}`;
   await conn.sendFile(m.chat, aa, 'error.jpg', iggs, m);
 };
-handler.command = /^(igstalk)$/i;
+handler.command = /^(انستالك)$/i;
 export default handler;
 
 async function igstalk(Username) {
