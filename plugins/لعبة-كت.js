@@ -27,7 +27,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 *الـجـائـزة💰↞ ${poin} نقاط*
 *KANEKI BOT*
 `.trim();
-        let image = 'https://telegra.ph/file/f5c021416da60ccd37f00.jpg'; // رابط الصورة الجديدة
+        let image = 'https://telegra.ph/file/3527e58273c8755700ee7.jpg'; // رابط الصورة الجديدة
         conn.tekateki[id] = [
             await conn.sendFile(m.chat, image, 'image.jpg', caption, m),
             json, poin,
