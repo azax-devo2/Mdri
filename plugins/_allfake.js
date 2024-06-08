@@ -7,7 +7,7 @@ import knights from 'knights-canvas'
 let handler = m => m
 handler.all = async function (m) {
     let name = await conn.getName(m.sender) 
-	let pp = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+	let pp = 'https://telegra.ph/file/e3aa1e89c07bc3eff65a0.jpg'
 	try {
 		pp = await this.profilePictureUrl(m.sender, 'image')
 	} catch (e) {
@@ -62,12 +62,12 @@ handler.all = async function (m) {
 				externalAdReply: {
                     showAdAttribution: true,
 					title: '',
-					body: 'ᴇʟᴀɪɴᴀ - ᴍᴜʟᴛɪᴅᴇᴠɪᴄᴇ', 
-					mediaUrl: sgc,
-					description: 'ᴇʟᴀɪɴᴀ - ᴍᴜʟᴛɪᴅᴇᴠɪᴄᴇ', 
-					previewType: "PHOTO",
+					body: 'deadpool', 
+					mediaUrl: 'https://whatsapp.com/channel/0029Vag9bvrLSmbRE2I5Oj2h',
+					description: 'deadpool', 
+					previewType: "img",
 					thumbnail: await (await fetch(pic)).buffer(),
-					sourceUrl: ''			
+					sourceUrl: 'https://telegra.ph/file/e3aa1e89c07bc3eff65a0.jpg'			
 				}
 			}
 		}
@@ -121,9 +121,9 @@ handler.all = async function (m) {
     } }
 global.fakefb = {
          contextInfo: { externalAdReply: { showAdAttribution: true,
-            mediaUrl: "https://Facebook.com/zuck",
+            mediaUrl: "https://whatsapp.com/channel/0029Vag9bvrLSmbRE2I5Oj2h",
             mediaType: "VIDEO",
-            description: "https://www.Facebook.com/zuck", 
+            description: "https://whatsapp.com/channel/0029Vag9bvrLSmbRE2I5Oj2h", 
             title: wm3,
             body: wm,
             thumbnailUrl: pp,
@@ -176,7 +176,7 @@ global.fakefb = {
             { fromMe: false,
             participant: `0@s.whatsapp.net`, ...(m.chat ? 
             { remoteJid: "status@broadcast" } : {}) },
-            message: { "liveLocationMessage": { "title": "ImYanXiao","h": wm, 'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')}}
+            message: { "liveLocationMessage": { "title": "by Azax","h": wm, 'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')}}
            }
                
                    global.ftoko = {
@@ -223,9 +223,9 @@ global.fakefb = {
            },
            "message": {
                "groupInviteMessage": {
-                   "groupJid": "6285736178354-1625305606@g.us",
+                   "groupjid": "6285736178354-1625305606@g.us",
                    "inviteCode": "null",
-                   "groupName": "Kawan Elaina", 
+                   "groupName": "Kawan Deadpool", 
                    "caption": wm, 
                    'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')
                }
@@ -237,7 +237,7 @@ global.fakefb = {
 			},
 			message: {
 				imageMessage: {
-					url: pic,
+					url: 'https://whatsapp.com/channel/0029Vag9bvrLSmbRE2I5Oj2h',
 					mimetype: 'image/jpeg',
 					fileLength: fsizedoc,
 					height: 306,
@@ -252,7 +252,7 @@ global.fakefb = {
 				},
 				message: {
 					imageMessage: {
-						url: pic,
+						url: 'https://whatsapp.com/channel/0029Vag9bvrLSmbRE2I5Oj2h',
 						mimetype: 'image/jpeg',
 						fileLength: fsizedoc,
 						height: 306,
@@ -271,11 +271,11 @@ global.fakefb = {
                        },
             message: { 
                         "videoMessage": { 
-                        "title": wm,
+                        "title": deadpool,
                         "h": `Hmm`,
                         'seconds': '999999999', 
                         'gifPlayback': 'true', 
-                        'caption': wm,
+                        'caption': by Azax,
                         'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')
                                }
                               }
@@ -292,25 +292,25 @@ export default handler
 
 function ucapan() {
 	const time = moment.tz('Asia/Jakarta').format('HH')
-	let res = "sᴇʟᴀᴍᴀᴛ ᴍᴀʟᴀᴍ 🌌"
+	let res = "طاب مساؤك 🌌"
 	if(time >= 1) {
-		res = "sᴇʟᴀᴍᴀᴛ ᴅɪɴɪ ʜᴀʀɪ 🌌"
+		res = "طاب مساؤك🌌"
 	}
 	if(time >= 4) {
-		res = "sᴇʟᴀᴍᴀᴛ ᴘᴀɢɪ ⛅"
+		res = "طاب صباحك ⛅"
 	}
 	if(time > 10) {
-		res = "sᴇʟᴀᴍᴀᴛ sɪᴀɴɢ 🌅"
+		res = "صباح الخير 🌅"
 	}
 	if(time >= 15) {
-		res = "sᴇʟᴀᴍᴀᴛ sᴏʀᴇ 🌇"
+		res = "ليلة سعيدة 🌇"
 	}
 	if(time >= 18) {
-		res = "sᴇʟᴀᴍᴀᴛ ᴍᴀʟᴀᴍ 🌃"
+		res = "نوما هنيا 🌃"
 	}
 	return res
 }
 
 function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
-		 }
+			   }
