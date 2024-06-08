@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 const handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!text) {
-    throw "> *Hola, soy un servicio `Math-Ai` ayudarle a resolver problemas matemáticos y realizar operaciones intratables*";
+    throw "> *مرحبًا، أنا خدمة `Math-Ai` تساعدك في حل المسائل الرياضية وإجراء العمليات المستعصية*";
   }
   try {
     conn.sendPresenceUpdate('composing', m.chat);
@@ -12,14 +12,14 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
       const respuestaAPI = BK8.BK9;
       conn.reply(m.chat, respuestaAPI, m);
        } else {
-      throw "> *Error ⚠️.*";
+      throw "> *خطأ ⚠️.*";
     }
   } catch (error) {
-    throw "> *Error ⚠️.*";
+    throw "> *خطأ ⚠️.*";
   }
 };
 
-handler.command = /^(iamates)$/i;
+handler.command = /^(حل-الحساب)$/i;
 handler.tags = ['ai'];
 export default handler;
 
