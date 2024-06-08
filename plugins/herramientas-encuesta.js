@@ -27,5 +27,5 @@ conn.relayMessage(m.chat, sendPollMessage, {quoted: m});
 };
 handler.help = ['encuesta question|option|option'];
 handler.tags = ['group'];
-handler.command = ['poll', 'encuesta'];
+handler.command = ['استطلاع', 'encuesta'];
 export default handler;
