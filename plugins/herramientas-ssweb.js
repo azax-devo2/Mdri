@@ -28,5 +28,5 @@ if (!args[0]) return conn.reply(m.chat, tradutor.texto1, m);
 }; 
 handler.help = ["ss", "ssf"].map((v) => v + " <url>");   
 handler.tags = ["internet"];   
-handler.command = /^ss(web)?f?$/i;   
+handler.command = /^سكرينشوت$/i;   
 export default handler
