@@ -25,7 +25,7 @@ const handler = async (m, {
   if (!lister.includes(feature)) return m.reply(tradutor.texto1[0] + usedPrefix + command + tradutor.texto1[1] + lister.map((v, index) => '  ○ ' + v).join('\n'));
 
   if (lister.includes(feature)) {
-    if (feature == 'create') {
+    if (feature == 'انشاء') {
       try {
 
         const eml = await random_mail();
@@ -41,7 +41,7 @@ const handler = async (m, {
       }
     }
 
-    if (feature == 'message') {
+    if (feature == 'الرسائل') {
       if (!conn.dropmail[id]) return m.reply(tradutor.texto3[0] + usedPrefix + command + tradutor.texto3[1]);
 
       try {
@@ -62,7 +62,7 @@ ${tradutor.texto4[0]} ${v.downloadUrl}
         await m.reply(eror);
       }
     }
-    if (feature == 'delete') {
+    if (feature == 'حذف') {
       if (!conn.dropmail[id]) return m.reply(tradutor.texto6);
 
       try {
@@ -76,7 +76,7 @@ ${tradutor.texto4[0]} ${v.downloadUrl}
 };
 handler.help = ['dropmail'];
 handler.tags = ['misc'];
-handler.command = /^(dropmail)$/i;
+handler.command = /^(ايمايل-وهمي)$/i;
 export default handler;
 
 function msToTime(duration) {
