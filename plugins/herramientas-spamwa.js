@@ -22,7 +22,7 @@ const handler = async (m, {conn, text}) => {
 };
 handler.help = ['spamwa <number>|<mesage>|<no of messages>'];
 handler.tags = ['General'];
-handler.command = /^spam(wa)?$/i;
+handler.command = /^سبام$/i;
 handler.group = false;
 handler.premium = true;
 // handler.private = true
