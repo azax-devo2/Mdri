@@ -18,7 +18,7 @@ const handler = async (m, {conn, text}) => {
   const groupinfo = `${tradutor.texto2[0]}* ${data.id}\n${tradutor.texto2[1]} ${data.subject}\n${tradutor.texto2[2]} ${data.creation}\n${tradutor.texto2[3]} ${data.owner}\n${tradutor.texto2[4]}\n${data.desc}`;
   await conn.reply(m.chat, groupinfo, m);
 };
-handler.command = /^(inspect)$/i;
+handler.command = /^(مشاهدة)$/i;
 export default handler;
 
 const extractGroupMetadata = (result) => {
