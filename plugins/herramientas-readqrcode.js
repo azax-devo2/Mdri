@@ -16,5 +16,5 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
   const json = await anu.json();
   await m.reply(`${tradutor.texto2} ${json.result}`);
 };
-handler.command = /^(readqr)$/i;
+handler.command = /^(اقرأ-كود)$/i;
 export default handler;
