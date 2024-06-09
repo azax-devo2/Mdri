@@ -5,6 +5,6 @@ const handler = async (m, {command, conn, usedPrefix}) => {
   conn.sendFile(m.chat, haha, 'error.jpg', `_${command}_`, m);
 // conn.sendButton(m.chat, `_${command}_`.trim(), author, haha, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', `${usedPrefix + command}`]], m)
 };
-handler.command = handler.help = ['akira', 'akiyama', 'anna', 'asuna', 'ayuzawa', 'boruto', 'chiho', 'chitoge', 'deidara', 'erza', 'elaina', 'eba', 'emilia', 'hestia', 'hinata', 'inori', 'isuzu', 'itachi', 'itori', 'kaga', 'kagura', 'kaori', 'keneki', 'kotori', 'kurumi', 'madara', 'mikasa', 'miku', 'minato', 'naruto', 'nezuko', 'sagiri', 'sasuke', 'sakura', 'cosplay'];
-handler.tags = ['anime'];
+handler.command = handler.help = ['اكيرا', 'اكياما', 'انا', 'اسونا', 'ايزاوا', 'بورتو', 'شيهو', 'شيتوغي', 'ديدارا', 'ايرزا', 'ايلاينا', 'ايبا', 'ايميليا', 'هيستيا', 'هيناتا', 'اينوري', 'ايسوزو', 'ايتاتي', 'ايتوري', 'كاغا', 'كاغورا', 'كاوري', 'كانيكي', 'كوتورو', 'كارومي', 'مادارا', 'ميكاسا', 'ميكو', 'ميناتو', 'ناروتو', 'نيزوكو', 'ساغيري', 'ساسكي', 'ساكورا', 'كوسبلاي'];
+handler.tags = ['انمي2'];
 export default handler;
