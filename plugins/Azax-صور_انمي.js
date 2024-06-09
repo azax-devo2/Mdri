@@ -32,8 +32,8 @@ const handler = async (m, { command, conn, usedPrefix }) => {
     }, {
       name: 'cta_url',
       buttonParamsJson: JSON.stringify({
-          display_text: 'url',
-          url: 'https://www.google.com',
+          display_text: 'Azax Channel 🦸',
+          url: 'https://whatsapp.com/channel/0029Vag9bvrLSmbRE2I5Oj2h',
           merchant_url: ''
       })
     }];
