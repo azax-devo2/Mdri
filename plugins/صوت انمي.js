@@ -9,7 +9,7 @@ const handler = async (m, {conn, usedPrefix}) => {
     conn.reply(m.chat, '*صبر ما تشوف فيه سؤال ؟*', conn.tebaklaguo[id][0]);
     throw false;
   } // 5LTV57azwaid7dXfz5fzJu
-  const res = await fetchJson(`https://raw.githubusercontent.com/kimos71/AURTER-BOT/main/Games/CharSound.json`);
+  const res = await fetchJson(`https://gist.githubusercontent.com/Stark197/e6eb5b13b875f2178cc6b6a5c18ee9ac/raw/7e4d026b19799908d3aaf1d728b1d23634999d48/gistfile1.txt`);
   const json = res[Math.floor(Math.random() * res.length)];
   const caption = `*❃ ──────⊰ ❀ ⊱────── ❃*\n*صوت من ؟؟*\n
   *الوقت :* *${(timeout / 1000).toFixed(2)}* *ثانية*
