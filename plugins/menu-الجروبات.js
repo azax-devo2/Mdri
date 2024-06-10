@@ -105,7 +105,7 @@ const handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, i
   }
 };
 
-handler.command = /^الجروبات$/i;
+handler.command = /^الجروبات2$/i;
 handler.exp = 50;
 handler.fail = null;
 
