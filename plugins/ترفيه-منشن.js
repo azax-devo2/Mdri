@@ -18,7 +18,11 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
     'عبقرية': `_*${text.toUpperCase()}* *نسبة عبقريته🧠* *${getRandomPercentage()}%* *${command.replace('how', '').toUpperCase()}, عبقري حقيقي!*_`,
     'قوة': `_*${text.toUpperCase()}* *نسبة قوته💪* *${getRandomPercentage()}%* *${command.replace('how', '').toUpperCase()}, قوي جداً!*_`,
     'ذكاء_عاطفي': `_*${text.toUpperCase()}* *نسبة ذكائه العاطفي❤️* *${getRandomPercentage()}%* *${command.replace('how', '').toUpperCase()}, حس مرهف!*_`,
-    'ابداع': `_*${text.toUpperCase()}* *نسبة ابداعه🎨* *${getRandomPercentage()}%* *${command.replace('how', '').toUpperCase()}, مبدع!*_`
+    'ابداع': `_*${text.toUpperCase()}* *نسبة ابداعه🎨* *${getRandomPercentage()}%* *${command.replace('how', '').toUpperCase()}, مبدع!*_`,
+    'سعادة': `_*${text.toUpperCase()}* *نسبة سعادته😊* *${getRandomPercentage()}%* *${command.replace('how', '').toUpperCase()}, سعيد جداً!*_`,
+    'رومانسية': `_*${text.toUpperCase()}* *نسبة رومانسيته❤️* *${getRandomPercentage()}%* *${command.replace('how', '').toUpperCase()}, رومانسي جداً!*_`,
+    'جاذبية': `_*${text.toUpperCase()}* *نسبة جاذبيته😍* *${getRandomPercentage()}%* *${command.replace('how', '').toUpperCase()}, جذاب للغاية!*_`,
+    'كاريزما': `_*${text.toUpperCase()}* *نسبة كاريزمته🕴️* *${getRandomPercentage()}%* *${command.replace('how', '').toUpperCase()}, ذو كاريزما عالية!*_`
   };
 
   const mentions = m.mentionedJid || [];
@@ -29,7 +33,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
         mentionedJid: mentions,
         externalAdReply: {
           showAdAttribution: true,
-          title: '@By Azax',
+          title: 'By Azax🚀',
           thumbnailUrl: 'https://telegra.ph/file/9bd0ea9801e961dbbfcdd.jpg', // URL للصورة
           sourceUrl: 'https://whatsapp.com/channel/0029Vag9bvrLSmbRE2I5Oj2h', // URL للرابط الداخلي
           mediaType: 1,
@@ -40,8 +44,9 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   }
 }
 
-handler.help = ['ورع', 'اهبل', 'خروف', 'جميل', 'فخم', 'أنوثه', 'رجوله', 'ذكاء', 'شجاعة', 'حظ', 'مرح', 'عبقرية', 'قوة', 'ذكاء_عاطفي', 'ابداع'].map(v => v + ' @tag | nombre');
+handler.help = ['ورع', 'اهبل', 'خروف', 'جميل', 'فخم', 'أنوثه', 'رجوله', 'ذكاء', 'شجاعة', 'حظ', 'مرح', 'عبقرية', 'قوة', 'ذكاء_عاطفي', 'ابداع', 'سعادة', 'رومانسية', 'جاذبية', 'كاريزما'].map(v => v + ' @tag | nombre');
 handler.tags = ['calculator'];
-handler.command = /^ورع|اهبل|خروف|جميل|فخم|انوثه|رجوله|ذكاء|شجاعة|حظ|مرح|عبقرية|قوة|ذكاء_عاطفي|ابداع/i;
+handler.command = /^ورع|اهبل|خروف|جميل|فخم|انوثه|رجوله|ذكاء|شجاعة|حظ|مرح|عبقرية|قوة|ذكاء_عاطفي|ابداع|سعادة|رومانسية|جاذبية|كاريزما/i;
 
 export default handler;
+            
