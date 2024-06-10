@@ -7,7 +7,7 @@ let handler = async (m, { conn, command, usedPrefix }) => {
         conn.reply(m.chat, '❐┃لم يتم الاجابة علي السؤال بعد┃❌ ❯', conn.tebakbendera[id][0])
         throw false
     }
-    let src = await (await fetch('https://gist.githubusercontent.com/YosefZoro1/10ef5c5023de5b565fbf561adafd86a8/raw/4a97c5abef49be34d1d748faa954b71345d24c3d/game5.json')).json()
+    let src = await (await fetch('https://raw.githubusercontent.com/mohamedkun15/TheMystic-Bot-MD/master/src/JSON/Flag.json')).json()
   let json = src[Math.floor(Math.random() * src.length)]
     let caption = ` *~⊹‏⊱≼━━━⌬〔📜〕⌬━━━≽⊰⊹~*
 *${command.toUpperCase()}*
