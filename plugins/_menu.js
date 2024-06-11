@@ -5,120 +5,144 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
     const mentionId = m.key.participant || m.key.remoteJid;
 
     if (device !== 'desktop' || device !== 'web') {      
-        var joanimiimg = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/file/6f891a7d95ebda85c819b.jpg'}}, { upload: conn.waUploadToServer })
+        var joanimiimg = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/file/3640269ed3d98be1e5961.jpg'}}, { upload: conn.waUploadToServer })
         const interactiveMessage = {
-            body: { text: `*مرحبا يا*: @${mentionId.split('@')[0]} `.trim() },
-            footer: { text: `©deadpool by Azax`.trim() },  
+            body: { text: `~*⊹‏⊱≼━━━⌬〔📜〕⌬━━━≽⊰⊹*~`.trim() },
+            footer: { text: `©By Azax`.trim() },  
             header: {
-                title: `*~⊹‏⊱≼━━━⌬〔📜〕⌬━━━≽⊰⊹~*`,
+                title: `مرحبا يا: @${mentionId.split('@')[0]}`,
+                subtitle: `*اختر احد الاوامر من القائمة*`,
                 hasMediaAttachment: true,
                 imageMessage: joanimiimg.imageMessage,
             },
             nativeFlowMessage: {
-                buttons: [
-                    {
-                        name: 'single_select',
-                        buttonParamsJson: JSON.stringify({
-                            title: 'القائمه📃',
-                            sections: [
-                                {
-                                    title: 'قسم التخصيصات',
-                                    highlight_label: '',
-                                    rows: [
-                                        {
-                                            header: '',
-                                            title: 'قسم التحميلات📁',
-                                            description: 'اســتـدعاء قـسـم التحميلات',
-                                            id: '.التحميلات'
-                                        }
-                                    ]
-                                },
-                                {
-                                    highlight_label: 'للمشرف فقط',
-                                    rows: [
-                                        {
-                                            header: '',
-                                            title: 'قـسـم الـجـروب💭',
-                                            description: 'اسـتـدعـاء قـسم #للمشرف',
-                                            id: '.الجروبات2'
-                                        },
-                                        {
-                                    title: 'قسم الترفيه',
-                                    highlight_label: '',
-                                    rows: [
-                                        {
-                                            header: '',
-                                            title: 'قسم الترفيه🚀',
-                                            description: 'اســتـدعاء قـسـم الترفيه',
-                                            id: '.الترفيه'
-                                        }
-                                    ]
-                                },
-                                        {
-                                    title: 'قسم التخصيصات',
-                                    highlight_label: '',
-                                    rows: [
-                                        {
-                                            header: '',
-                                            title: 'قسم التحويلات♻️',
-                                            description: 'اســتـدعاء قـسـم التحويلات',
-                                            id: '.التحويلات'
-                                        }
-                                    ]
-                                },
-                                        {
-                                    title: 'قسم التخصيصات',
-                                    highlight_label: '',
-                                    rows: [
-                                        {
-                                            header: '',
-                                            title: 'قسم الصور♥️',
-                                            description: 'اســتـدعاء قـسـم الصور',
-                                            id: '.الصور2'
-                                        }
-                                    ]
-                                },
-                                        {
-                                    title: 'قسم التخصيصات',
-                                    highlight_label: '',
-                                    rows: [
-                                        {
-                                            header: '',
-                                            title: 'قسم الالعاب🚁',
-                                            description: 'اســتـدعاء قـسـم الالعاب',
-                                            id: '.الالعاب'
-                                        }
-                                    ]
-                                }
-                                    ]
-                                },
-                                {
-                                    highlight_label: 'ON',
-                                    rows: [
-                                        {
-                                            header: 'Test',
-                                            title: 'قـسـم الأدوات🛠️',
-                                            description: '#الأدوات',
-                                            id: '.الادوات'
-                                        }
-                                    ]
-                                }
-                            ]
-                        })
-                    },
-                    {
-                        "name": "cta_reminder",
-                        "buttonParamsJson": "{\"display_text\":\"ضبط التذكير\",\"id\":\"ذكرني في الوقت :\"}"
-                    },
-                    {
-                        "name": "cta_call",
-                        "buttonParamsJson": "{\"display_text\":\"اتصل بالمطور🙂‍↕\",\"id\":\"+212والرقم\"}"
-                    },
-                    {
-                        "name": "cta_url",
-                        "buttonParamsJson": "{\"display_text\":\"قـناة البوت\",\"url\":\"https://whatsapp.com/channel/0029Vag9bvrLSmbRE2I5Oj2h\",\"merchant_url\":\"\"}"
-                    }
-                ],
+  						buttons: [
+  							{
+  								name: 'single_select',
+  						  	buttonParamsJson: JSON.stringify({
+  						  		title: '🐾➜⃞「الاوامر」',
+  						  		sections: [
+  						  			{
+  						  				title: 'قوائم الأوامر',
+  						  		    rows: [
+  						  		    	{
+  						  		    		header: 'By Azax',
+  										      title: 'استدعاء قائمة المجموعات',
+  									    	  description: '#قائمة اوامر المجموعات',
+  								    		  id: '.الجروبات2'
+  						  		    	}
+  						  		    ]
+  						  			},
+  						  			{
+  						  				rows: [
+  						  					{
+  						  		    		header: 'By Azax',
+  										      title: 'استدعاء قائمة الترفيه',
+  									    	  description: 'Click Me',
+  								    		  id: '.الترفيه'
+  						  		    	}
+  						  				]
+  						  			},
+  						  			{
+  						  				rows: [
+  						  					{
+  						  		    		header: 'By Azax',
+  										      title: 'استدعاء قائمة الادوات',
+  									    	  description: 'Click Me',
+  								    		  id: '.الادوات'
+  						  		    	}
+  						  				]
+  						  			},
+  						  			{
+  						  				rows: [
+  						  					{
+  						  		    		header: 'By Azax',
+  										      title: 'استدعاء قائمة التحميلات',
+  									    	  description: 'Click Me',
+  								    		  id: '.التحميلات'
+  						  		    	}
+  						  				]
+  						  			},
+  						  			{
+  						  				rows: [
+  						  					{
+  						  		    		header: 'By Azax',
+  										      title: 'استدعاء قائمة التحويلات',
+  									    	  description: 'Click Me',
+  								    		  id: '.التحويلات'
+  						  		    	}
+  						  				]
+  						  			},
+  						  			{
+  						  				rows: [
+  						  					{
+  						  		    		header: 'By Azax',
+  										      title: 'استدعاء قائمة الصور',
+  									    	  description: 'Click Me',
+  								    		  id: '.الصور'
+  						  		    	}
+  						  				]
+  						  			},
+  						  			{
+  						  				rows: [
+  						  					{
+  						  		    		header: 'By Azax',
+  										      title: 'استدعاء قائمة الملصقات',
+  									    	  description: 'Click Me',
+  								    		  id: '.الملصقات'
+  						  		    	}
+  						  				]
+  						  			},
+  						  			{
+  						  				rows: [
+  						  					{
+  						  		    		header: 'By Azax',
+  										      title: 'استدعاء قائمة الالعاب',
+  									    	  description: 'Click Me',
+  								    		  id: '.الالعاب'
+  						  		    	}
+  						  				]
+  						  			},
+  						  			{
+  						  				rows: [
+  						  					{
+  						  		    		header: 'By Azax',
+  										      title: 'استدعاء قائمة الاوامر الدينية',
+  									    	  description: 'Click Me',
+  								    		  id: '.الاسلام'
+  						  		    	}
+  						  				]
+  						  			},
+  						  			{
+  						  				rows: [
+  						  					{
+  						  		    		header: 'By Azax',
+  										      title: 'استدعاء قائمة التصاميم',
+  									    	  description: 'Click Me',
+  								    		  id: '.التصاميم'
+  						  		    	}
+  						  				]
+  						  			}
+  						  		]
+  						  	})
+  							},
+                              {
+                                  name: 'cta_url',
+                                  buttonParamsJson: JSON.stringify({
+                                      display_text: '⚠️مجموعة البوت⚠️',
+                                      url: 'https://whatsapp.com/channel/0029Vag9bvrLSmbRE2I5Oj2h',
+                                      merchant_url: ''
+                                  })
+                              },
+                              {
+                                  name: 'cta_url',
+                                  buttonParamsJson: JSON.stringify({
+                                      display_text: '👨🏻‍💻قناه البوت👨🏻‍💻',
+                                      url: 'https://whatsapp.com/channel/0029Vag9bvrLSmbRE2I5Oj2h',
+                                      merchant_url: 'https://whatsapp.com/channel/0029Vag9bvrLSmbRE2I5Oj2h'
+                                  })
+                              }
+  			  		],
                 messageParamsJson: ''
             }
         };        
@@ -137,7 +161,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
         conn.sendFile(m.chat, 'JoAnimi•Error.jpg', m);      
     }    
 };
-handler.help = ['اوامر'];
-handler.tags = ['ازرار'];
-handler.command = ['اوامر'];
+handler.help = ['imgboton'];
+handler.tags = ['For Test'];
+handler.command = ['الاوامر','اوامر'];
 export default handler;
