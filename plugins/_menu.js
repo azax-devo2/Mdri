@@ -38,7 +38,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  					{
   						  		    		header: 'By Azax',
   										      title: 'استدعاء قائمة الترفيه',
-  									    	  description: 'Click Me',
+  									    	  description: 'deadpool',
   								    		  id: '.الترفيه'
   						  		    	}
   						  				]
@@ -48,7 +48,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  					{
   						  		    		header: 'By Azax',
   										      title: 'استدعاء قائمة الادوات',
-  									    	  description: 'Click Me',
+  									    	  description: 'deadpool,
   								    		  id: '.الادوات'
   						  		    	}
   						  				]
@@ -58,7 +58,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  					{
   						  		    		header: 'By Azax',
   										      title: 'استدعاء قائمة التحميلات',
-  									    	  description: 'Click Me',
+  									    	  description: 'deadpool',
   								    		  id: '.التحميلات'
   						  		    	}
   						  				]
@@ -68,7 +68,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  					{
   						  		    		header: 'By Azax',
   										      title: 'استدعاء قائمة التحويلات',
-  									    	  description: 'Click Me',
+  									    	  description: 'deadpool',
   								    		  id: '.التحويلات'
   						  		    	}
   						  				]
@@ -78,8 +78,8 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  					{
   						  		    		header: 'By Azax',
   										      title: 'استدعاء قائمة الصور',
-  									    	  description: 'Click Me',
-  								    		  id: '.الصور'
+  									    	  description: 'deadpool',
+  								    		  id: '.صور'
   						  		    	}
   						  				]
   						  			},
@@ -88,7 +88,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  					{
   						  		    		header: 'By Azax',
   										      title: 'استدعاء قائمة الملصقات',
-  									    	  description: 'Click Me',
+  									    	  description: 'deadpool',
   								    		  id: '.الملصقات'
   						  		    	}
   						  				]
@@ -98,7 +98,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  					{
   						  		    		header: 'By Azax',
   										      title: 'استدعاء قائمة الالعاب',
-  									    	  description: 'Click Me',
+  									    	  description: 'deadpool',
   								    		  id: '.الالعاب'
   						  		    	}
   						  				]
@@ -108,7 +108,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  					{
   						  		    		header: 'By Azax',
   										      title: 'استدعاء قائمة الاوامر الدينية',
-  									    	  description: 'Click Me',
+  									    	  description: 'deadpool',
   								    		  id: '.الاسلام'
   						  		    	}
   						  				]
@@ -118,7 +118,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  					{
   						  		    		header: 'By Azax',
   										      title: 'استدعاء قائمة التصاميم',
-  									    	  description: 'Click Me',
+  									    	  description: 'deadpool',
   								    		  id: '.التصاميم'
   						  		    	}
   						  				]
