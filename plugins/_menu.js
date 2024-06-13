@@ -48,7 +48,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
   						  					{
   						  		    		header: 'By Azax',
   										      title: 'استدعاء قائمة الادوات',
-  									    	  description: 'deadpool,
+  									    	  description: 'deadpool',
   								    		  id: '.الادوات'
   						  		    	}
   						  				]
