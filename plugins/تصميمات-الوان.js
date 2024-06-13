@@ -14,5 +14,5 @@ const handler = async (m, {conn}) => {
 };
 handler.help = ['gay'];
 handler.tags = ['maker'];
-handler.command = /^(gay)$/i;
+handler.command = /^(الوان)$/i;
 export default handler;
